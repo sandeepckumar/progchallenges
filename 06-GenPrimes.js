@@ -29,4 +29,4 @@ const genPrimes = (x, y) => {
   return primes;
 };
 
-console.log(genPrimes(0, 100));
+console.log(genPrimes(1000, 100000));
