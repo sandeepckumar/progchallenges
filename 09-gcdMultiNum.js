@@ -23,7 +23,7 @@ console.log(findGcdArr(arr))
 
 const reduce = (callback, arr) => {
     let value = arr[0]
-    for (let i=0; i < arr.length; i++) {
+    for (let i=0; i < arr.length; ++i) {
         let currentValue = arr[i]
         value = callback(value, currentValue)
     }
