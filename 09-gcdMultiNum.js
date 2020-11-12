@@ -16,8 +16,6 @@ const findGcdArr = arr => {
 
 }
 
-
-
 console.log(findGcdArr(arr))
 
 
