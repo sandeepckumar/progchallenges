@@ -1,19 +1,19 @@
 /* Write a program to decide given N is prime or not. */
 
 const isPrime = (num) => {
-  if (num === 2 || num === 3) {
+  if (num === 2) {
     return true;
-  } else if (num % 2 === 0) {
+  }
+  if (num % 2 === 0) {
     return false;
-  } else {
-    for (i = 3; i < num; i += 2) {
-      if (num % i === 0) {
-        return false;
-      } else {
-        return true;
-      }
+  }
+  div = Math.floor(Math.sqrt(num));
+  for (let i = 3; i <= div; i += 2) {
+    if (num % i === 0) {
+      return false;
     }
   }
+  return true;
 };
 
 primes = [
@@ -67,6 +67,7 @@ primes = [
 
 for (let _ of primes) {
   if (!isPrime(_)) {
+    console.log(_);
     console.log("failed");
   }
 }
